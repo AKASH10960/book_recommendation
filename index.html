@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-6 shadow-md">
+        <h1 class="text-3xl font-bold">Book Recommendations</h1>
+        <p class="text-sm mt-1">Discover your next favorite read!</p>
+    </header>
+
+    <main class="p-6">
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Top Picks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold">The Great Gatsby</h3>
+                    <p class="text-sm text-gray-600">by F. Scott Fitzgerald</p>
+                    <p class="mt-2">A classic novel of the Roaring Twenties filled with mystery, romance, and tragedy.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold">To Kill a Mockingbird</h3>
+                    <p class="text-sm text-gray-600">by Harper Lee</p>
+                    <p class="mt-2">A powerful novel about justice and race in the Deep South.</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold">1984</h3>
+                    <p class="text-sm text-gray-600">by George Orwell</p>
+                    <p class="mt-2">A chilling dystopian tale about surveillance and totalitarianism.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Suggest a Book</h2>
+            <form class="bg-white p-4 rounded-xl shadow-md max-w-md">
+                <label class="block mb-2 font-medium" for="bookTitle">Book Title</label>
+                <input class="w-full p-2 border border-gray-300 rounded mb-4" type="text" id="bookTitle" name="bookTitle" required>
+
+                <label class="block mb-2 font-medium" for="author">Author</label>
+                <input class="w-full p-2 border border-gray-300 rounded mb-4" type="text" id="author" name="author" required>
+
+                <label class="block mb-2 font-medium" for="description">Description</label>
+                <textarea class="w-full p-2 border border-gray-300 rounded mb-4" id="description" name="description" rows="4" required></textarea>
+
+                <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-semibold mb-4">Book of the Day</h2>
+            <div class="bg-yellow-100 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold">The Alchemist</h3>
+                <p class="text-sm text-gray-600">by Paulo Coelho</p>
+                <p class="mt-2">A philosophical story about a young shepherd's journey to discover his personal legend and destiny.</p>
+                <iframe class="mt-4 w-full h-64 rounded-lg" src="https://www.youtube.com/embed/2DoZROwdz7I" title="The Alchemist Book Review" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-center p-4 mt-8">
+        <p>&copy; 2025 Book Recommender</p>
+    </footer>
+</body>
+</html>
